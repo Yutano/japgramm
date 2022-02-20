@@ -3,16 +3,78 @@ body{
     font-family: 'Nunito', sans-serif;
     margin: 0;
   }
-  div {padding: 30px 0}
+
+ header{
+     background-color: #a3d0c3;
+     
+     
+ }
+
+ .menu-main {
+    list-style: none; 
+    margin: 0 auto;
+    padding: 25px 50px ;
+    text-align: left;
+    
+  }
+
+.menu-main a {text-decoration: none; 
+    letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 5px;
+  margin: 0 10px 0 30px;
+  font-size: 17px;
   
+  display: inline-block;
+  transition: color .2s;
+} 
+
+.menu-main li {
+     display: inline-block;
+     /*margin-right: 70px;*/     
+    }
+    .menu-main a, .menu-main a:visited {color: #585658;}
+    .menu-main a.current, .menu-main a:hover{color: #ffffff;}
+    .menu-main a:before,
+    .menu-main a:after {
+      content: "";
+      position: absolute;
+      height: 4px;
+      top: auto;
+      right: 50%;
+      bottom: -5px;
+      left: 50%;
+      background: #ffffff;
+      transition: .8s;
+    }
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+ @media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+      padding: 25px 0 20px; 
+      margin: 0 30px;
+    }
+}
+
+ .main{
+     background-color: #f9f9f9;
+ }
+
+ .search{
+     padding: 20px 70px;
+ }
   form {
     position: relative;
     width: 300px;
-    margin: 0 auto;
+    
+    border-bottom: 4px solid #35423b;
   }
   
   /*.search {background: #F9F0DA;}*/
-  .search form {background: #A3D0C3;}
+  
   .search input, .search button {
     border: none;
     outline: none;
@@ -36,7 +98,7 @@ body{
     content: "\f002";
     font-family: FontAwesome;
     font-size: 16px;
-    color: #F9F0DA;
+    color: #0a4a55;
   }
   
   
@@ -54,7 +116,7 @@ body{
   }
   
   th, td{
-    padding: 10px;
+    padding: 5px;
   }
   
   td {
