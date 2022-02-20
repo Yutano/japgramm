@@ -1,0 +1,75 @@
+body{
+    background:white;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+  }
+  div {padding: 30px 0}
+  
+  form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  /*.search {background: #F9F0DA;}*/
+  .search form {background: #A3D0C3;}
+  .search input, .search button {
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  .search input {
+    width: 100%;
+    height: 42px;
+    padding-left: 15px;
+    font-size:16px;
+  }
+  .search button {
+    height: 100%;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  .search button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+  }
+  
+  
+  
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+     background: #416154; 
+    color: white;
+     border: none;
+  }
+  
+  th, td{
+    padding: 10px;
+  }
+  
+  td {
+    text-align:left;
+    padding-left: 20px;
+    border: 2px solid #526157;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+  }
+  
+  .jap{
+    background: #ffe18e;
+  }
+  
+  .rus{
+    background: #92d4a0;
+  }
