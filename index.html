@@ -1,144 +1,32 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="main.css">
-  </head>
-  
-  <body>
-      <header>
-          <ul class="menu-main">
-              <li><a href="#">таблица</a></li>
-              <li><a href="#">таблица</a></li>
-              <li><a href="#">глаголы</a></li>
-              <li><a href="#">существительные</a></li>
-              <li><a href="#">прилагательные</a></li>            
-          </ul>
-      </header>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japgramm</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <ul class="menu-main" >
+            <li><a class="source source-1">Таблица</a></li>
+            <li><a class="source source-2">Глаголы</a></li>
+            <li><a class="source source-3">Oстальное</a></li>
+        </ul>
+    </header>
 
-      <div class="main">
+    <div class="pages">
+        <div class="target target-1"> 
+            <iframe src="maintable.html" frameborder="0" scrolling="no"   width="100%" height="900px"></iframe>          
+        </div>
 
-            <div class="search">
-                <form> 
-                    <input type="text" placeholder="Поиск" id="search-text" onkeyup="tableSearch()">
-                    <button type="submit"></button>
-                </form> 
-            </div>
-    
+        <div class="target target-2">  
+            <iframe src="verbsgram.html" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" width="100%" height="900px"></iframe>
+          </div>
 
-            <table class="table table-striped" id="grammar">
-
-                <colgroup>
-                    <col width=1%>
-                    <col width=3%>
-                    <col width=7% class="jap" >
-                    <col width=12% class="rus">
-                    <col width= 20%>
-                    <col width= 15% class="dop">
-                </colgroup>
-
-                <thead>
-                    <tr>
-                    <th>JLPT</th>
-                    <th>часть речи</th>
-                    <th>японский</th>
-                    <th>русский</th>
-                    <th>пример</th>
-                    <th>дополнение</th>
-                    </tr>
-                </thead>
-        
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-        
-                <tr>
-                    <td>N4</td>
-                    <td>IIIう<br>Vない</td>
-                    <td>ことになっている</td>
-                    <td>так заведено</td>
-                    <td>この会社で制服を着る<b>ことになっている</b><br>
-            В этой фирме принято носить форму</td>
-                    <td></td>
-                </tr>
-        
-                <tr>
-                    <td>N4</td>
-                    <td>IIIう<br>Vない</td>
-                    <td>ことになる</td>
-                    <td>было решено (кем-то другим)</td>
-                    <td>アメリカに行く<b>ことになった。</b><br>  
-            Было решено поехать в Америку</td>
-                    <td></td>
-                </tr>
-                
-                <tr>
-                    <td>N4</td>
-                    <td>IIIう<br>Vない</td>
-                    <td>ことにする</td>
-                    <td>я решил, что…</td>
-                    <td>そのことを気にしない<b>ことにする</b><br> Я решил не париться по этому поводу.</td>
-                    <td> ことにする - решение принято сейчас (по ходу разговора)<br>ことにした решение принято недавно. (до разговора)</td>
-                </tr>
-
-                <tr>
-                    <td>N4</td>
-                    <td>IIIう<br>Vない</td>
-                    <td>ことにしている</td>
-                    <td>решил делать на постоянной основе</td>
-                    <td>酒を飲まない<b>ことにしている。</b><br>
-            Я решил, что больше не буду употреблять алкоголь.</td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td>N4</td>
-                    <td>Vて</td>
-                    <td>いく</td>
-                    <td>объект движется к нам</td>
-                    <td>猫が走って<b>くる。</b><br>
-            Кошка бежит ко мне (в мою сторону)</td>
-                    <td>いく　－　объект движется от нас</td>
-                </tr>
-        
-                <tr>
-                    <td>N4</td>
-                    <td>Vて</td>
-                    <td>いく</td>
-                    <td>действие началось с этого момента и  будет продолжаться в будущем</td>
-                    <td>これからだんだん寒くなって<b>いく。</b><br>
-            Теперь будет становится всё холоднее и холоднее.</td>
-                    <td>くる　ー　изменения / обстоятельства начались в прошлом, постепенно дошли до настоящего момента</td>
-                </tr>
-
-                <tr>
-                    <td>N4</td>
-                    <td>Vて</td>
-                    <td>くる</td>
-                    <td>объект движется от нас</td>
-                    <td>猫が走って<b>いく。</b><br>
-            Кошка бежит в другую сторону.</td>
-                    <td>くる　―　объект движется к нам</td>
-                </tr>
-        
-                <tr>
-                    <td>N4</td>
-                    <td>Vて</td>
-                    <td>くる</td>
-                    <td>изменения/обстоятельства начались в прошлом , постепенно дошли до настоящего момента</td>
-                <td>私の日本語は上手になって<b>きた。</b><br>
-            Я отлично овладел японским языком. <br><p>(Учить начал его в прошлом и постепенно наращивал опыт и знания. И сейчас уже отлично владею им)</td>
-                    <td>いく　ー　действие началось с этого момента и  будет продолжаться в будущем</td>
-                </tr>
-
-            </table>
-
-        <script src="index.js"></script>    
+        <div class="target target-3">  остальное  </div>
     </div>
-  </body>
+    <script src="js/index.js"></script>
+</body>
 </html>

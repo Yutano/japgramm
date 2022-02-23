@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;       
+}
+
+.hidden {display: none}
+
+iframe{
+    top: 0;
+    left: 0;
+    border: 0;
+    height: 1000px;
+    width: 100%;
+}
+
+/*///////////*/
+.vertical-menu{    
+    background: #d2cd55;
+    color: black;
+    float: left;
+    width: 200px;
+    height: 100%;
+}
+
+.vertical-list{
+    padding: 0;
+    list-style: none;    
+}
+
+.widget-list a:before {
+    content: "\2014";
+    margin-right: 14px;
+  }
+
+.vertical-list a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    color: #444;
+    transition: .3s linear;
+    padding: 6px 20px;    
+}
+
+.vertical-list a:hover {color:#a38f4b}
+/*///////////*/
+
+.right-side{
+    margin-left: 201px;      
+}

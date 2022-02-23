@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/maintable.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="search" id="jap">
+        <form> 
+            <input type="text" placeholder="японский" id="search-text" onkeyup="tableSearch()">
+            <button type="submit"></button>
+        </form> 
+    </div>
+
+    <div class="search" id="rus">
+        <form> 
+            <input type="text" placeholder="русский" id="search-textrus" onkeyup="tableSearchrus()">
+            <button type="submit"></button>
+        </form> 
+    </div>
+
+    <table class="table table-striped" id="grammar">
+        <colgroup>
+            <col width=1%>
+            <col width=3%>
+            <col width=7% class="jap" >
+            <col width=12% class="rus">
+            <col width= 20%>
+            <col width= 15% class="dop">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>JLPT</th>
+                <th>часть речи</th>
+                <th>японский</th>
+                <th>русский</th>
+                <th>пример</th>
+                <th>дополнение</th>
+            </tr>
+        </thead>
+
+    <!-- 
+        <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    -->       
+
+        <tr>
+            <td>N4</td>
+            <td>IIIう<br>Vない</td>
+            <td>ことになっている</td>
+            <td>так заведено</td>
+            <td>この会社で制服を着る<b>ことになっている</b><br>
+    В этой фирме принято носить форму</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>N4</td>
+            <td>IIIう<br>Vない</td>
+            <td>ことになる</td>
+            <td>было решено (кем-то другим)</td>
+            <td>アメリカに行く<b>ことになった。</b><br>  
+    Было решено поехать в Америку</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>N4</td>
+            <td>IIIう<br>Vない</td>
+            <td>ことにする</td>
+            <td>я решил, что…</td>
+            <td>そのことを気にしない<b>ことにする</b><br> Я решил не париться по этому поводу.</td>
+            <td> ことにする - решение принято сейчас (по ходу разговора)<br>ことにした решение принято недавно. (до разговора)</td>
+        </tr>
+
+        <tr>
+            <td>N4</td>
+            <td>IIIう<br>Vない</td>
+            <td>ことにしている</td>
+            <td>решил делать на постоянной основе</td>
+            <td>酒を飲まない<b>ことにしている。</b><br>
+    Я решил, что больше не буду употреблять алкоголь.</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>N4</td>
+            <td>Vて</td>
+            <td>いく</td>
+            <td>объект движется к нам</td>
+            <td>猫が走って<b>くる。</b><br>
+                Кошка бежит ко мне (в мою сторону)</td>
+            <td>いく　－　объект движется от нас</td>
+        </tr>
+
+        <tr>
+            <td>N4</td>
+            <td>Vて</td>
+            <td>いく</td>
+            <td>действие началось с этого момента и  будет продолжаться в будущем</td>
+            <td>これからだんだん寒くなって<b>いく。</b><br>
+                Теперь будет становится всё холоднее и холоднее.</td>
+            <td>くる　ー　изменения / обстоятельства начались в прошлом, постепенно дошли до настоящего момента</td>
+        </tr>
+
+        <tr>
+            <td>N4</td>
+            <td>Vて</td>
+            <td>くる</td>
+            <td>объект движется от нас</td>
+            <td>猫が走って<b>いく。</b><br>
+                Кошка бежит в другую сторону.</td>
+            <td>くる　―　объект движется к нам</td>
+        </tr>
+
+        <tr>
+            <td>N4</td>
+            <td>Vて</td>
+            <td>くる</td>
+            <td>изменения/обстоятельства начались в прошлом, 
+                постепенно дошли до настоящего момента</td>
+        <td>私の日本語は上手になって<b>きた。</b><br>
+            Я отлично овладел японским языком. <br><p>
+                (Учить начал его в прошлом и постепенно 
+                наращивал опыт и знания. И сейчас уже отлично владею им)</td>
+            <td>いく　ー　действие началось с этого момента и 
+                будет продолжаться в будущем</td>
+        </tr>
+
+    </table>
+
+    <script src="js/maintable.js"></script>
+</body>
+</html>
