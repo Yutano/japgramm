@@ -10,7 +10,25 @@ table{
 
 th, td{
     border: 2px solid black; 
-    padding: 15px;    
+    padding: 10px;
+    border: 2px solid #526157;    
 }
 
-.lft{text-align: center;}
+.cntr{text-align: center;}
+
+.colortxt{color: red;}
+
+#color1{background: #d2ce5580;}
+#color2{background: #ffd86385;}
+#color3{background: #fffbce94;}
+
+.tab{
+    float: left;
+    
+}
+
+.textblock{
+    float: left;
+    padding: 0 40px;
+    width: 35%;    
+}
