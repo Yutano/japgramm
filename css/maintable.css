@@ -58,7 +58,8 @@ th, td{padding: 5px;}
 
 td {
     text-align:left;
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     border: 2px solid #526157;
     border-top:none;
     border-left:none;
@@ -67,4 +68,5 @@ td {
 .jap{background: #ffd863;}
   
 .rus{background: #d2cd55}
+
  /*///////////*/

@@ -18,7 +18,7 @@ iframe{
     background: #d2cd55;
     color: black;
     float: left;
-    width: 190px;
+    width: 230px;
     height: 100%;
 }
 
@@ -45,5 +45,5 @@ iframe{
 /*///////////*/
 
 .right-side{
-    margin-left: 191px;      
+    margin-left: 231px;      
 }
