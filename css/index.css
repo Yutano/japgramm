@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Noto+Sans+JP&display=swap');
+
 body{
     background: #F7FBEF;
     margin: 0;
-    font-family: 'Nunito', sans-serif;       
+    font-family: 'Noto Sans JP','Noto Sans Display', sans-serif;  
+    font-size: 18px;      
 }
 
 .hidden {display: none}
